@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FairQuote helps freelancers estimate project pricing with a simple calculator."
+    />
+    <title>FairQuote | Project Price Estimate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="page-title">
+        <p class="eyebrow">Freelance pricing calculator</p>
+        <h1 id="page-title">FairQuote</h1>
+        <p class="subtitle">Estimate a fair project price before you send a client quote.</p>
+
+        <form id="estimate-form" novalidate>
+          <div class="field-group">
+            <label for="hours">Estimated work hours</label>
+            <input
+              id="hours"
+              name="hours"
+              type="number"
+              min="0.1"
+              step="0.5"
+              inputmode="decimal"
+              placeholder="e.g. 20"
+              aria-describedby="error-message"
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="rate">Hourly rate</label>
+            <input
+              id="rate"
+              name="rate"
+              type="number"
+              min="0.01"
+              step="0.01"
+              inputmode="decimal"
+              placeholder="e.g. 65"
+              aria-describedby="error-message"
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="expenses">Project expenses</label>
+            <input
+              id="expenses"
+              name="expenses"
+              type="number"
+              min="0"
+              step="0.01"
+              inputmode="decimal"
+              placeholder="e.g. 150"
+              aria-describedby="error-message"
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="currency">Currency</label>
+            <select id="currency" name="currency" aria-label="Select currency">
+              <option value="USD">USD (US Dollar)</option>
+              <option value="EUR">EUR (Euro)</option>
+              <option value="GBP">GBP (British Pound)</option>
+              <option value="INR">INR (Indian Rupee)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="calculate-button">Calculate estimate</button>
+        </form>
+
+        <div id="error-message" class="error-message" aria-live="polite"></div>
+
+        <section id="result" class="result" hidden aria-live="polite">
+          <p class="result-label">Estimated total</p>
+          <p id="total-amount" class="total-amount">$0.00</p>
+          <p id="formula" class="formula">Calculation: 0 × $0.00 + $0.00</p>
+        </section>
+
+        <p class="note">
+          This estimate is a planning aid, not a guarantee of what a client will pay.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
