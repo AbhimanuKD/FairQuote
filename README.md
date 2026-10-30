@@ -1,4 +1,4 @@
-duq 
+
 # FairQuote
 
 FairQuote is a simple, beginner-friendly website for freelancers who want to estimate a project price before sending a quote to a client. It works as a static webpage, so it can be published on GitHub Pages without a backend or any paid service.
@@ -13,19 +13,7 @@ FairQuote is a simple, beginner-friendly website for freelancers who want to est
 - Include a reminder that the estimate is a planning aid, not a guarantee of what a client will pay
 - Mobile-friendly layout with accessible labels and keyboard-friendly controls
 
-## Local setup
 
-1. Download or clone this repository.
-2. Open the project folder in your editor.
-3. Start a local web server in the project root, for example:
-
-```bash
-python3 -m http.server 8000
-```
-
-4. Open http://localhost:8000 in your browser.
-
-You can also open `index.html` directly in a browser, but using a local server is usually easier and more reliable.
 
 
 ## How the JavaScript calculation works
