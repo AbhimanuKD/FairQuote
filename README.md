@@ -1,3 +1,4 @@
+duq 
 # FairQuote
 
 FairQuote is a simple, beginner-friendly website for freelancers who want to estimate a project price before sending a quote to a client. It works as a static webpage, so it can be published on GitHub Pages without a backend or any paid service.
@@ -26,15 +27,6 @@ python3 -m http.server 8000
 
 You can also open `index.html` directly in a browser, but using a local server is usually easier and more reliable.
 
-## GitHub Pages publishing steps
-
-1. Push this project to a GitHub repository.
-2. In the repository, open Settings.
-3. Select Pages in the left sidebar.
-4. Under Source, choose "Deploy from a branch".
-5. Pick the `main` branch and the `/ (root)` folder.
-6. Save the settings.
-7. GitHub Pages will provide a live URL for the project.
 
 ## How the JavaScript calculation works
 
